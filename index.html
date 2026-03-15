@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <meta property="og:image" content="https://bolt.new/static/og_default.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://bolt.new/static/og_default.png">
+</head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#"><i class="bi bi-shop"></i> ShopHub</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+            <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+            <li class="nav-item"><a class="nav-link" href="#testimonials">Reviews</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="bi bi-cart3"></i> <span id="cart-count" class="badge bg-danger">0</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home" class="hero-section">
+      <div class="container">
+        <div class="row align-items-center min-vh-100">
+          <div class="col-lg-6">
+            <h1 class="display-3 fw-bold mb-4">Discover Amazing Products</h1>
+            <p class="lead mb-4">Shop the latest trends with exclusive deals. Quality products, fast shipping, and exceptional customer service.</p>
+            <div class="d-flex gap-3">
+              <button class="btn btn-primary btn-lg">Shop Now</button>
+              <button class="btn btn-outline-light btn-lg">Learn More</button>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-image-container">
+              <img src="https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Shopping" class="img-fluid rounded-4 shadow-lg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="categories" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Shop by Category</h2>
+        <div class="row g-4">
+          <div class="col-md-3 col-sm-6">
+            <div class="category-card text-center">
+              <div class="category-icon"><i class="bi bi-laptop"></i></div>
+              <h5>Electronics</h5>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="category-card text-center">
+              <div class="category-icon"><i class="bi bi-brightness-high"></i></div>
+              <h5>Fashion</h5>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="category-card text-center">
+              <div class="category-icon"><i class="bi bi-house-door"></i></div>
+              <h5>Home & Living</h5>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="category-card text-center">
+              <div class="category-icon"><i class="bi bi-heart-pulse"></i></div>
+              <h5>Health & Beauty</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">Featured Products</h2>
+        <div class="row g-4" id="products-container">
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Why Choose Us</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="feature-box text-center p-4">
+              <div class="feature-icon mb-3"><i class="bi bi-truck"></i></div>
+              <h4>Free Shipping</h4>
+              <p>Free delivery on orders over $50. Fast and reliable shipping worldwide.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="feature-box text-center p-4">
+              <div class="feature-icon mb-3"><i class="bi bi-shield-check"></i></div>
+              <h4>Secure Payment</h4>
+              <p>100% secure payment processing. Your data is always protected.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="feature-box text-center p-4">
+              <div class="feature-icon mb-3"><i class="bi bi-arrow-clockwise"></i></div>
+              <h4>Easy Returns</h4>
+              <p>30-day return policy. No questions asked, hassle-free returns.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">What Our Customers Say</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="testimonial-card p-4">
+              <div class="stars mb-3">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+              </div>
+              <p class="mb-3">"Amazing quality and fast shipping! I'm extremely satisfied with my purchase."</p>
+              <div class="d-flex align-items-center">
+                <div class="avatar me-3">SJ</div>
+                <div>
+                  <h6 class="mb-0">Sarah Johnson</h6>
+                  <small class="text-muted">Verified Buyer</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="testimonial-card p-4">
+              <div class="stars mb-3">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+              </div>
+              <p class="mb-3">"Best online shopping experience ever. Great customer service and quality products."</p>
+              <div class="d-flex align-items-center">
+                <div class="avatar me-3">MC</div>
+                <div>
+                  <h6 class="mb-0">Michael Chen</h6>
+                  <small class="text-muted">Verified Buyer</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="testimonial-card p-4">
+              <div class="stars mb-3">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+              </div>
+              <p class="mb-3">"Reliable and trustworthy. I recommend ShopHub to all my friends and family."</p>
+              <div class="d-flex align-items-center">
+                <div class="avatar me-3">ER</div>
+                <div>
+                  <h6 class="mb-0">Emily Rodriguez</h6>
+                  <small class="text-muted">Verified Buyer</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <div class="newsletter-box text-center p-5">
+              <h2 class="mb-3">Stay Updated</h2>
+              <p class="mb-4">Subscribe to our newsletter for exclusive deals and new arrivals.</p>
+              <form id="newsletter-form" class="d-flex gap-2">
+                <input type="email" class="form-control form-control-lg" placeholder="Enter your email" required>
+                <button type="submit" class="btn btn-primary btn-lg">Subscribe</button>
+              </form>
+              <p id="form-message" class="mt-3"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-light py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <h5 class="mb-3"><i class="bi bi-shop"></i> ShopHub</h5>
+            <p>Your premium shopping destination for quality products at great prices.</p>
+            <div class="social-icons">
+              <a href="#" class="text-light me-3"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="text-light me-3"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="text-light me-3"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="text-light"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="col-md-2 mb-4">
+            <h6 class="mb-3">Shop</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-light text-decoration-none">All Products</a></li>
+              <li><a href="#" class="text-light text-decoration-none">New Arrivals</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Best Sellers</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Sale</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 mb-4">
+            <h6 class="mb-3">Company</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-light text-decoration-none">About Us</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Careers</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Press</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Blog</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 mb-4">
+            <h6 class="mb-3">Support</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-light text-decoration-none">Help Center</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Contact Us</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Shipping Info</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Returns</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 mb-4">
+            <h6 class="mb-3">Legal</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-light text-decoration-none">Privacy Policy</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Terms of Service</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Cookie Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr class="my-4 bg-light">
+        <div class="text-center">
+          <p class="mb-0">&copy; 2026 ShopHub. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
